@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+/* ==========================================================
+   GLOBAL STYLES
+   ========================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: hsl(0 0% 100%);
+  color: hsl(222 47% 11%);
+  line-height: 1.5;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 0 1rem;
+}
+.hidden-mobile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+/* ==========================================================
+   HEADER
+   ========================================================== */
+.home-header {
+  background: hsl(0 0% 4%);
+  border-bottom: 2px solid hsl(350 89% 50%);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.home-header-nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(0 0% 75%);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+.home-header-nav-link:hover {
+  color: hsl(350 89% 50%);
+}
+.home-header-nav-item {
+  position: relative;
+}
+.home-header-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: hsl(0 0% 4%);
+  border: 1px solid hsl(0 0% 20%);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: all 0.2s ease-in-out;
+  z-index: 60;
+}
+.home-header-nav-item:hover .home-header-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.home-header-dropdown a {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: hsl(0 0% 55%);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.home-header-dropdown a:hover {
+  color: hsl(0 0% 100%);
+  background: hsl(0 0% 12%);
+}
+.home-header-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: hsl(0 0% 75%);
+  padding: 0.5rem;
+  transition: color 0.2s ease-in-out;
+}
+.home-header-icon-btn:hover {
+  color: hsl(350 89% 50%);
+}
+.home-header-logo {
+  color: hsl(0 0% 100%);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  text-decoration: none;
+}
+.home-header-logo-accent {
+  color: hsl(350 89% 50%);
+}
+/* ==========================================================
+   SEARCH OVERLAY
+   ========================================================== */
+.home-search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsla(0 0% 0% / 0.6);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
+.home-search-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.home-search-overlay-content {
+  background: hsl(0 0% 100%);
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 2rem 0;
+}
+.home-search-input {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 2px solid hsl(222 47% 11%);
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  background: transparent;
+  color: hsl(222 47% 11%);
+}
+.home-search-input::placeholder {
+  color: hsl(215 16% 47%);
+}
+.home-search-input:focus {
+  border-bottom-color: hsl(350 89% 50%);
+}
+.home-search-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: hsl(222 47% 11%);
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+.home-search-close:hover {
+  color: hsl(350 89% 50%);
+}
+.home-search-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsl(215 16% 47%);
+  margin-bottom: 1rem;
+}
+.home-search-quick-link {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(222 47% 11%);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  transition: color 0.2s;
+}
+.home-search-quick-link:hover {
+  color: hsl(350 89% 50%);
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+.home-footer {
+  background: hsl(0 0% 4%);
+  border-top: 2px solid hsl(350 89% 50%);
+  color: hsl(0 0% 80%);
+  padding: 4rem 0 2rem;
+}
+.home-footer-heading {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(0 0% 100%);
+  margin-bottom: 1.25rem;
+}
+.home-footer-link {
+  display: block;
+  font-size: 0.8125rem;
+  color: hsl(0 0% 55%);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  transition: color 0.2s;
+}
+.home-footer-link:hover {
+  color: hsl(350 89% 50%);
+}
+.home-footer-divider {
+  border-top: 1px solid hsl(0 0% 15%);
+  padding-top: 1.5rem;
+}
+.home-footer-copy {
+  font-size: 0.75rem;
+  text-align: center;
+  color: hsl(0 0% 40%);
+}
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 1024px) {
+  .home-hero-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 1rem;
+  }
+  .hidden-mobile {
+    display: none;
+  }
+  .home-hero {
+    height: 350px;
+  }
+  .home-hero-slide img {
+    height: 350px;
+  }
+  .home-hero-title {
+    font-size: 1.5rem;
+  }
+  .home-newsletter-input {
+    min-width: unset;
+    width: 100%;
+  }
+  .home-game-banner {
+    height: 120px;
+  }
+}
