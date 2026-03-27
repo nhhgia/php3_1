@@ -4,18 +4,16 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Category;
-use Illuminate\Support\Str;
 
-class CategoryController extends Controller
+class GameController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $category = Category::orderBy('id','desc')->get();
-        return view('admin.category.index', compact('category') );
+         $category = Category::orderBy('id','desc')->get();
+        return view('admin.game.index', compact('category') );
     }
 
     /**
@@ -29,23 +27,22 @@ class CategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request) {
-        // Validation: Kiểm tra dữ liệu
-        $request->validate([
+    public function store(Request $request)
+    {
+         $request->validate([
             'name' => 'required|unique:categories|max:255',
         ], [
             'name.required' => 'Tên danh mục không được để trống',
             'name.unique' => 'Tên danh mục này đã tồn tại',
         ]);
 
-        // Lưu vào database
+        
         Category::create([
         'name' => $request->name,
         'slug' => Str::slug($request->name)
         ]);
-        return redirect()->route('admin.categories.index')->with('success', 'Thêm thành công!');
+        return redirect()->route('categories.index')->with('success', 'Thêm thành công!');
     }
-
 
     /**
      * Display the specified resource.

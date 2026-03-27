@@ -1,22 +1,36 @@
-    <?php
-    use Illuminate\Support\Facades\Route;
-    use App\Http\Controllers\HomeController;
-    use App\Http\Controllers\ProductController;
+<?php
 
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
-    // Danh sách sản phẩm
-    Route::get('/san-pham', function () {
-        return view('products');
-    });
-    // Chi tiết sản phẩm (Route có tham số)
-    Route::get('/san-pham/{slug}',[ProductController::class, 'show']);
-    Route::get('/', [HomeController::class, 'index']);
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
 
-    use App\Http\Controllers\Admin\CategoryController;
-    use App\Http\Controllers\Admin\ProductController as AdminProductController;
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/san-pham/{slug}', [ProductController::class, 'show'])->name('product.show');
 
-        Route::prefix('admin')->group(function () {
-        Route::resource('categories', CategoryController::class);
-        Route::resource('product', AdminProductController::class);
-    });
+use App\Http\Controllers\Admin\CategoryController;
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::resource('categories', CategoryController::class);
+});
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';

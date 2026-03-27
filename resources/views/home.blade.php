@@ -267,7 +267,7 @@
         <div class="home-product-card" style="background-color: #00000066;">
             <div class="home-product-card-image">
               <a href="/san-pham/{{$item->slug}}">
-              <img src="{{asset('img/products/'. $item->image)}}" alt="${p.name}">
+              <img src="https://picsum.photos/300/200" alt="${p.name}">
             </a>
               <button class="home-product-card-cart" aria-label="Add to cart">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
