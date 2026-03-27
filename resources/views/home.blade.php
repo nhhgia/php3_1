@@ -121,14 +121,38 @@
     </div>
   </section>
   <!-- AZUR LANE SECTION -->
-  <section class="home-game-section">
+ <section class="home-game-section">
     <div class="grid-container">
-      <div style="grid-column: 2 / 12;">
-        <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
+    
+      <img src="{{asset('img/banner/BG-azurland.png')}}" alt=""  
+      style="position: absolute; 
+             margin:0;
+            left:0;
+            width: 100%;
+            height: 700px;  
+            object-fit: cover; 
+            z-index: -1;">
+    
 
+        <div style="grid-column: 2 / 12;">
+        <div style="position: relative;">
+        <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
+          <h1 style="position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             color: white;
+             font-size: 2.5rem;
+             font-weight: 900;
+             text-shadow: 2px 2px 0 black;
+             z-index: 1;
+             ">
+          AZUR LANE
+          </h1>
+          </div>
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
         @foreach($azurlane as $item)
-        <div class="home-product-card">
+        <div class="home-product-card" style="background-color: #ffffff66">
             <div class="home-product-card-image">
               <a href="/san-pham/{{$item->slug}}">
               <img src="{{asset('img/products/'. $item->image)}}" alt="${p.name}">
@@ -155,14 +179,40 @@
   <!-- zzz SECTION -->
  <section class="home-game-section">
     <div class="grid-container">
-      <div style="grid-column: 2 / 12;">
-        <img src="{{asset('img/banner/zzz2.jpg')}}" alt="Azur Lane" class="home-game-banner">
+    
+      <img src="{{asset('img/banner/BG-zzz.png')}}" alt=""  
+      style="position: absolute; 
+            margin:0;
+            left:0;
+            width: 100%;
+            height: 700px;  
+            object-fit: cover; 
+            z-index: -1;">
+    
 
+        <div style="grid-column: 2 / 12;">
+        <div style="position: relative;">
+        <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
+          <h1 style="position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             color: white;
+             font-size: 2.5rem;
+             font-weight: 900;
+             text-shadow: 2px 2px 0 black;
+             z-index: 1;
+             ">
+          ZENLESS ZONE ZERO
+          </h1>
+          </div>
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
         @foreach($zzz as $item)
-        <div class="home-product-card">
+        <div class="home-product-card" style="background-color: #00000066;">
             <div class="home-product-card-image">
+              <a href="/san-pham/{{$item->slug}}">
               <img src="{{asset('img/products/'. $item->image)}}" alt="${p.name}">
+            </a>
               <button class="home-product-card-cart" aria-label="Add to cart">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -171,18 +221,18 @@
                 </svg>
               </button>
             </div>
-            <p class="home-product-card-name">{{$item->name}}</p>
+            <p class="home-product-card-name" style="color:white;">{{$item->name}}</p>
             <p class="home-product-card-price">{{$item->price}}</p>
           </div> 
         @endforeach
         </div>
         <div style="text-align: center;">
-          <button class="home-btn-outline">View More Zenless Zone Zero </button>
+          <button class="home-btn-outline">View More Azur Lane</button>
         </div>
       </div>
     </div>
   </section>
-  <!-- HONKAI  SECTION -->
+<!-- HONKAI  SECTION -->
  <section class="home-game-section">
     <div class="grid-container">
       <div style="grid-column: 2 / 12;">
