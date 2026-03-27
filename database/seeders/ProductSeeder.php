@@ -18,7 +18,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Enterprise Figure',
                 'slug' => 'azur-lane-enterprise-figure',
-                'image' => 'images/products/azurlane/enterprise-figure.jpg',
+                'image' => 'azurlane/enterprise-figure.jpg',
                 'price' => 899000.00,
                 'description' => 'Mô hình Enterprise cao cấp từ Azur Lane, chi tiết sắc nét, tư thế chiến đấu mạnh mẽ.',
                 'short_desc' => 'Figure Enterprise cao cấp',
@@ -33,7 +33,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Musashi Nendoroid',
                 'slug' => 'azur-lane-musashi-nendoroid',
-                'image' => 'images/products/azurlane/musashi-nendoroid.jpg',
+                'image' => 'azurlane/musashi-nendoroid.jpeg',
                 'price' => 649000.00,
                 'description' => 'Nendoroid Musashi dễ thương với phụ kiện kiếm và biểu cảm đa dạng.',
                 'short_desc' => 'Nendoroid Musashi',
@@ -48,7 +48,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Hindenburg Acrylic Stand',
                 'slug' => 'azur-lane-hindenburg-acrylic-stand',
-                'image' => 'images/products/azurlane/hindenburg-stand.jpg',
+                'image' => 'azurlane/hindenburg-stand.png',
                 'price' => 329000.00,
                 'description' => 'Stand acrylic Hindenburg chất lượng cao, thiết kế đẹp mắt.',
                 'short_desc' => 'Acrylic Stand Hindenburg',
@@ -63,7 +63,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane New Jersey Mouse Pad',
                 'slug' => 'azur-lane-new-jersey-mouse-pad',
-                'image' => 'images/products/azurlane/newjersey-mousepad.jpg',
+                'image' => 'azurlane/newjersey-mousepad.jpg',
                 'price' => 449000.00,
                 'description' => 'Thảm chuột New Jersey size lớn, bề mặt êm, in hình sắc nét.',
                 'short_desc' => 'Mouse Pad New Jersey',
@@ -78,7 +78,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Laffey Dakimakura',
                 'slug' => 'azur-lane-laffey-dakimakura',
-                'image' => 'images/products/azurlane/laffey-dakimakura.jpg',
+                'image' => 'azurlane/laffey-dakimakura.jpg',
                 'price' => 1299000.00,
                 'description' => 'Gối ôm Dakimakura Laffey chất liệu cao cấp, hai mặt in hình.',
                 'short_desc' => 'Dakimakura Laffey',
@@ -93,7 +93,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Belfast Keychain',
                 'slug' => 'azur-lane-belfast-keychain',
-                'image' => 'images/products/azurlane/belfast-keychain.jpg',
+                'image' => 'azurlane/belfast-keychain.jpg',
                 'price' => 229000.00,
                 'description' => 'Móc khóa Belfast kim loại cao cấp.',
                 'short_desc' => 'Keychain Belfast',
@@ -108,7 +108,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Prinz Eugen Poster',
                 'slug' => 'azur-lane-prinz-eugen-poster',
-                'image' => 'images/products/azurlane/prinz-eugen-poster.jpg',
+                'image' => 'azurlane/prinz-eugen-poster.jpg',
                 'price' => 279000.00,
                 'description' => 'Poster Prinz Eugen size A1, chất lượng in cao.',
                 'short_desc' => 'Poster Prinz Eugen',
@@ -123,7 +123,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Atago T-Shirt',
                 'slug' => 'azur-lane-atago-tshirt',
-                'image' => 'images/products/azurlane/atago-tshirt.jpg',
+                'image' => 'azurlane/atago-tshirt.jpg',
                 'price' => 399000.00,
                 'description' => 'Áo thun cotton in hình Atago, thoáng mát, thiết kế đẹp.',
                 'short_desc' => 'T-Shirt Atago',
@@ -138,7 +138,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Taiho Plush Toy',
                 'slug' => 'azur-lane-taiho-plush',
-                'image' => 'images/products/azurlane/taiho-plush.jpg',
+                'image' => 'azurlane/taiho-plush.jpg',
                 'price' => 749000.00,
                 'description' => 'Gấu bông Taiho size lớn, mềm mại và dễ thương.',
                 'short_desc' => 'Plush Taiho',
@@ -153,7 +153,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Azur Lane Alsace Wallet',
                 'slug' => 'azur-lane-alsace-wallet',
-                'image' => 'images/products/azurlane/alsace-wallet.jpg',
+                'image' => 'azurlane/alsace-wallet.jpg',
                 'price' => 359000.00,
                 'description' => 'Ví da in hình Alsace, nhiều ngăn tiện lợi.',
                 'short_desc' => 'Wallet Alsace',
@@ -170,7 +170,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Ellen Joe Figure',
                 'slug' => 'zzz-ellen-joe-figure',
-                'image' => 'images/products/zzz/ellen-figure.jpg',
+                'image' => 'zzz/ellen-figure.png',
                 'price' => 1199000.00,
                 'description' => 'Figure Ellen Joe phiên bản cao cấp từ Zenless Zone Zero.',
                 'short_desc' => 'Figure Ellen Joe',
@@ -185,7 +185,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Zhu Yuan Acrylic Stand',
                 'slug' => 'zzz-zhu-yuan-acrylic-stand',
-                'image' => 'images/products/zzz/zhuyuan-stand.jpg',
+                'image' => 'zzz/zhuyuan-stand.webp',
                 'price' => 349000.00,
                 'description' => 'Stand acrylic Zhu Yuan chất lượng cao.',
                 'short_desc' => 'Acrylic Stand Zhu Yuan',
@@ -200,7 +200,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Von Lycaon Mouse Pad',
                 'slug' => 'zzz-von-lycaon-mouse-pad',
-                'image' => 'images/products/zzz/lycaon-mousepad.jpg',
+                'image' => 'zzz/lycaon-mousepad.jpg',
                 'price' => 429000.00,
                 'description' => 'Thảm chuột Von Lycaon thiết kế chuyên nghiệp.',
                 'short_desc' => 'Mouse Pad Lycaon',
@@ -215,7 +215,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Burnice Plush',
                 'slug' => 'zzz-burnice-plush',
-                'image' => 'images/products/zzz/burnice-plush.jpg',
+                'image' => 'zzz/burnice-plush.webp',
                 'price' => 699000.00,
                 'description' => 'Gấu bông Burnice dễ thương.',
                 'short_desc' => 'Plush Burnice',
@@ -230,7 +230,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Jane Doe Keychain',
                 'slug' => 'zzz-jane-doe-keychain',
-                'image' => 'images/products/zzz/janedoe-keychain.jpg',
+                'image' => 'zzz/janedoe-keychain.jpg',
                 'price' => 249000.00,
                 'description' => 'Móc khóa Jane Doe kim loại.',
                 'short_desc' => 'Keychain Jane Doe',
@@ -245,7 +245,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Qingyi T-Shirt',
                 'slug' => 'zzz-qingyi-tshirt',
-                'image' => 'images/products/zzz/qingyi-tshirt.jpg',
+                'image' => 'zzz/qingyi-tshirt.jpg',
                 'price' => 419000.00,
                 'description' => 'Áo thun in hình Qingyi phong cách đường phố.',
                 'short_desc' => 'T-Shirt Qingyi',
@@ -260,7 +260,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Astra Yao Poster',
                 'slug' => 'zzz-astra-yao-poster',
-                'image' => 'images/products/zzz/astrayao-poster.jpg',
+                'image' => 'zzz/astrayao-poster.jpg',
                 'price' => 299000.00,
                 'description' => 'Poster Astra Yao size lớn.',
                 'short_desc' => 'Poster Astra Yao',
@@ -275,7 +275,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Soldier 0 Anby Figure',
                 'slug' => 'zzz-soldier0-anby-figure',
-                'image' => 'images/products/zzz/anby-figure.jpg',
+                'image' => 'zzz/anby-figure.jpg',
                 'price' => 999000.00,
                 'description' => 'Figure Soldier 0 Anby phiên bản đặc biệt.',
                 'short_desc' => 'Figure Anby',
@@ -290,7 +290,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Miyabi Dakimakura',
                 'slug' => 'zzz-miyabi-dakimakura',
-                'image' => 'images/products/zzz/miyabi-dakimakura.jpg',
+                'image' => 'zzz/miyabi-dakimakura.jpg',
                 'price' => 1399000.00,
                 'description' => 'Gối ôm Miyabi chất lượng premium.',
                 'short_desc' => 'Dakimakura Miyabi',
@@ -305,7 +305,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Zenless Zone Zero Caesar King Wallet',
                 'slug' => 'zzz-caesar-king-wallet',
-                'image' => 'images/products/zzz/caesar-wallet.jpg',
+                'image' => 'zzz/caesar-wallet.jpg',
                 'price' => 379000.00,
                 'description' => 'Ví Caesar King thiết kế mạnh mẽ.',
                 'short_desc' => 'Wallet Caesar',
@@ -322,7 +322,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Acheron Figure',
                 'slug' => 'hsr-acheron-figure',
-                'image' => 'images/products/hsr/acheron-figure.jpg',
+                'image' => 'hsr/acheron-figure.jpg',
                 'price' => 1299000.00,
                 'description' => 'Figure Acheron cao cấp từ Honkai: Star Rail.',
                 'short_desc' => 'Figure Acheron',
@@ -337,7 +337,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Firefly Plush',
                 'slug' => 'hsr-firefly-plush',
-                'image' => 'images/products/hsr/firefly-plush.jpg',
+                'image' => 'hsr/firefly-plush.jpg',
                 'price' => 749000.00,
                 'description' => 'Gấu bông Firefly dễ thương.',
                 'short_desc' => 'Plush Firefly',
@@ -352,7 +352,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Kafka Acrylic Stand',
                 'slug' => 'hsr-kafka-acrylic-stand',
-                'image' => 'images/products/hsr/kafka-stand.jpg',
+                'image' => 'hsr/kafka-stand.jpg',
                 'price' => 339000.00,
                 'description' => 'Stand acrylic Kafka.',
                 'short_desc' => 'Acrylic Stand Kafka',
@@ -367,7 +367,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Sunday Mouse Pad',
                 'slug' => 'hsr-sunday-mouse-pad',
-                'image' => 'images/products/hsr/sunday-mousepad.jpg',
+                'image' => 'hsr/sunday-mousepad.jpg',
                 'price' => 459000.00,
                 'description' => 'Thảm chuột Sunday thiết kế tinh tế.',
                 'short_desc' => 'Mouse Pad Sunday',
@@ -382,7 +382,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Dan Heng Imbibitor Lunae Figure',
                 'slug' => 'hsr-danheng-il-figure',
-                'image' => 'images/products/hsr/danheng-il-figure.jpg',
+                'image' => 'hsr/danheng-il-figure.jpg',
                 'price' => 1099000.00,
                 'description' => 'Figure Dan Heng • Imbibitor Lunae.',
                 'short_desc' => 'Figure Dan Heng IL',
@@ -397,7 +397,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Aventurine Keychain',
                 'slug' => 'hsr-aventurine-keychain',
-                'image' => 'images/products/hsr/aventurine-keychain.jpg',
+                'image' => 'hsr/aventurine-keychain.jpg',
                 'price' => 259000.00,
                 'description' => 'Móc khóa Aventurine.',
                 'short_desc' => 'Keychain Aventurine',
@@ -412,7 +412,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Robin Poster',
                 'slug' => 'hsr-robin-poster',
-                'image' => 'images/products/hsr/robin-poster.jpg',
+                'image' => 'hsr/robin-poster.jpg',
                 'price' => 289000.00,
                 'description' => 'Poster Robin size A1.',
                 'short_desc' => 'Poster Robin',
@@ -427,7 +427,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Blade T-Shirt',
                 'slug' => 'hsr-blade-tshirt',
-                'image' => 'images/products/hsr/blade-tshirt.jpg',
+                'image' => 'hsr/blade-tshirt.jpg',
                 'price' => 429000.00,
                 'description' => 'Áo thun Blade phong cách dark.',
                 'short_desc' => 'T-Shirt Blade',
@@ -442,7 +442,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Silver Wolf Dakimakura',
                 'slug' => 'hsr-silverwolf-dakimakura',
-                'image' => 'images/products/hsr/silverwolf-dakimakura.jpg',
+                'image' => 'hsr/silverwolf-dakimakura.jpg',
                 'price' => 1349000.00,
                 'description' => 'Gối ôm Silver Wolf.',
                 'short_desc' => 'Dakimakura Silver Wolf',
@@ -457,7 +457,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Honkai Star Rail Jing Yuan Wallet',
                 'slug' => 'hsr-jingyuan-wallet',
-                'image' => 'images/products/hsr/jingyuan-wallet.jpg',
+                'image' => 'hsr/jingyuan-wallet.jpg',
                 'price' => 369000.00,
                 'description' => 'Ví Jing Yuan sang trọng.',
                 'short_desc' => 'Wallet Jing Yuan',
@@ -474,7 +474,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Surtr Figure',
                 'slug' => 'arknights-surtr-figure',
-                'image' => 'images/products/arknights/surtr-figure.jpg',
+                'image' => 'arknights/surtr-figure.jpg',
                 'price' => 1099000.00,
                 'description' => 'Figure Surtr cao cấp từ Arknights.',
                 'short_desc' => 'Figure Surtr',
@@ -489,7 +489,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights SilverAsh Acrylic Stand',
                 'slug' => 'arknights-silverash-stand',
-                'image' => 'images/products/arknights/silverash-stand.jpg',
+                'image' => 'arknights/silverash-stand.jpg',
                 'price' => 319000.00,
                 'description' => 'Stand acrylic SilverAsh.',
                 'short_desc' => 'Acrylic Stand SilverAsh',
@@ -504,7 +504,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Exusiai Plush',
                 'slug' => 'arknights-exusiai-plush',
-                'image' => 'images/products/arknights/exusiai-plush.jpg',
+                'image' => 'arknights/exusiai-plush.jpg',
                 'price' => 679000.00,
                 'description' => 'Gấu bông Exusiai dễ thương.',
                 'short_desc' => 'Plush Exusiai',
@@ -519,7 +519,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Lappland Mouse Pad',
                 'slug' => 'arknights-lappland-mouse-pad',
-                'image' => 'images/products/arknights/lappland-mousepad.jpg',
+                'image' => 'arknights/lappland-mousepad.jpg',
                 'price' => 399000.00,
                 'description' => 'Thảm chuột Lappland.',
                 'short_desc' => 'Mouse Pad Lappland',
@@ -534,7 +534,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Thorns Keychain',
                 'slug' => 'arknights-thorns-keychain',
-                'image' => 'images/products/arknights/thorns-keychain.jpg',
+                'image' => 'arknights/thorns-keychain.jpg',
                 'price' => 239000.00,
                 'description' => 'Móc khóa Thorns.',
                 'short_desc' => 'Keychain Thorns',
@@ -549,7 +549,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Mudrock Poster',
                 'slug' => 'arknights-mudrock-poster',
-                'image' => 'images/products/arknights/mudrock-poster.jpg',
+                'image' => 'arknights/mudrock-poster.jpg',
                 'price' => 269000.00,
                 'description' => 'Poster Mudrock size lớn.',
                 'short_desc' => 'Poster Mudrock',
@@ -564,7 +564,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Nearl the Radiant Knight T-Shirt',
                 'slug' => 'arknights-nearl-rk-tshirt',
-                'image' => 'images/products/arknights/nearl-tshirt.jpg',
+                'image' => 'arknights/nearl-tshirt.jpg',
                 'price' => 449000.00,
                 'description' => 'Áo thun Nearl the Radiant Knight.',
                 'short_desc' => 'T-Shirt Nearl RK',
@@ -579,7 +579,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Kaltsit Dakimakura',
                 'slug' => 'arknights-kaltsit-dakimakura',
-                'image' => 'images/products/arknights/kaltsit-dakimakura.jpg',
+                'image' => 'arknights/kaltsit-dakimakura.jpg',
                 'price' => 1249000.00,
                 'description' => 'Gối ôm Kal\'tsit.',
                 'short_desc' => 'Dakimakura Kaltsit',
@@ -594,7 +594,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Blaze Wallet',
                 'slug' => 'arknights-blaze-wallet',
-                'image' => 'images/products/arknights/blaze-wallet.jpg',
+                'image' => 'arknights/blaze-wallet.jpg',
                 'price' => 349000.00,
                 'description' => 'Ví Blaze thiết kế mạnh mẽ.',
                 'short_desc' => 'Wallet Blaze',
@@ -609,7 +609,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Logos Figure',
                 'slug' => 'arknights-logos-figure',
-                'image' => 'images/products/arknights/logos-figure.jpg',
+                'image' => 'arknights/logos-figure.jpg',
                 'price' => 999000.00,
                 'description' => 'Figure Logos phiên bản đặc biệt.',
                 'short_desc' => 'Figure Logos',
@@ -626,7 +626,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Last Rite Figure',
                 'slug' => 'endfield-last-rite-figure',
-                'image' => 'images/products/endfield/lastrite-figure.jpg',
+                'image' => 'endfield/lastrite-figure.jpg',
                 'price' => 1199000.00,
                 'description' => 'Figure Last Rite cao cấp từ Arknights: Endfield.',
                 'short_desc' => 'Figure Last Rite',
@@ -641,7 +641,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Laevatain Acrylic Stand',
                 'slug' => 'endfield-laevatain-stand',
-                'image' => 'images/products/endfield/laevatain-stand.jpg',
+                'image' => 'endfield/laevatain-stand.jpg',
                 'price' => 329000.00,
                 'description' => 'Stand acrylic Laevatain.',
                 'short_desc' => 'Acrylic Stand Laevatain',
@@ -656,7 +656,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Ardelia Plush',
                 'slug' => 'endfield-ardelia-plush',
-                'image' => 'images/products/endfield/ardelia-plush.jpg',
+                'image' => 'endfield/ardelia-plush.jpg',
                 'price' => 729000.00,
                 'description' => 'Gấu bông Ardelia.',
                 'short_desc' => 'Plush Ardelia',
@@ -671,7 +671,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Pogranichnik Mouse Pad',
                 'slug' => 'endfield-pogranichnik-mouse-pad',
-                'image' => 'images/products/endfield/pogranichnik-mousepad.jpg',
+                'image' => 'endfield/pogranichnik-mousepad.jpg',
                 'price' => 419000.00,
                 'description' => 'Thảm chuột Pogranichnik.',
                 'short_desc' => 'Mouse Pad Pogranichnik',
@@ -686,7 +686,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Gilberta Keychain',
                 'slug' => 'endfield-gilberta-keychain',
-                'image' => 'images/products/endfield/gilberta-keychain.jpg',
+                'image' => 'endfield/gilberta-keychain.jpg',
                 'price' => 249000.00,
                 'description' => 'Móc khóa Gilberta.',
                 'short_desc' => 'Keychain Gilberta',
@@ -701,7 +701,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Ember Poster',
                 'slug' => 'endfield-ember-poster',
-                'image' => 'images/products/endfield/ember-poster.jpg',
+                'image' => 'endfield/ember-poster.jpg',
                 'price' => 279000.00,
                 'description' => 'Poster Ember size A1.',
                 'short_desc' => 'Poster Ember',
@@ -716,7 +716,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Yvonne T-Shirt',
                 'slug' => 'endfield-yvonne-tshirt',
-                'image' => 'images/products/endfield/yvonne-tshirt.jpg',
+                'image' => 'endfield/yvonne-tshirt.jpg',
                 'price' => 399000.00,
                 'description' => 'Áo thun Yvonne.',
                 'short_desc' => 'T-Shirt Yvonne',
@@ -731,7 +731,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Lifeng Dakimakura',
                 'slug' => 'endfield-lifeng-dakimakura',
-                'image' => 'images/products/endfield/lifeng-dakimakura.jpg',
+                'image' => 'endfield/lifeng-dakimakura.jpg',
                 'price' => 1299000.00,
                 'description' => 'Gối ôm Lifeng.',
                 'short_desc' => 'Dakimakura Lifeng',
@@ -746,7 +746,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Endministrator Wallet',
                 'slug' => 'endfield-endministrator-wallet',
-                'image' => 'images/products/endfield/endministrator-wallet.jpg',
+                'image' => 'endfield/endministrator-wallet.jpg',
                 'price' => 359000.00,
                 'description' => 'Ví Endministrator.',
                 'short_desc' => 'Wallet Endministrator',
@@ -761,7 +761,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Arknights Endfield Chen Qianyu Figure',
                 'slug' => 'endfield-chen-qianyu-figure',
-                'image' => 'images/products/endfield/chenqianyu-figure.jpg',
+                'image' => 'endfield/chenqianyu-figure.jpg',
                 'price' => 949000.00,
                 'description' => 'Figure Chen Qianyu phiên bản đặc biệt.',
                 'short_desc' => 'Figure Chen Qianyu',

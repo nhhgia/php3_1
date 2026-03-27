@@ -130,7 +130,9 @@
         @foreach($azurlane as $item)
         <div class="home-product-card">
             <div class="home-product-card-image">
-              <img src="{{asset('img/featured/'. $item->image)}}" alt="${p.name}">
+              <a href="/san-pham/{{$item->slug}}">
+              <img src="{{asset('img/products/'. $item->image)}}" alt="${p.name}">
+            </a>
               <button class="home-product-card-cart" aria-label="Add to cart">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -154,13 +156,13 @@
  <section class="home-game-section">
     <div class="grid-container">
       <div style="grid-column: 2 / 12;">
-        <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
+        <img src="{{asset('img/banner/zzz2.jpg')}}" alt="Azur Lane" class="home-game-banner">
 
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
         @foreach($zzz as $item)
         <div class="home-product-card">
             <div class="home-product-card-image">
-              <img src="{{asset('img/featured/'. $item->image)}}" alt="${p.name}">
+              <img src="{{asset('img/products/'. $item->image)}}" alt="${p.name}">
               <button class="home-product-card-cart" aria-label="Add to cart">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -190,7 +192,7 @@
         @foreach($hsr as $item)
         <div class="home-product-card">
             <div class="home-product-card-image">
-              <img src="{{asset('img/featured/'. $item->image)}}" alt="${p.name}">
+              <img src="{{asset('img/'. $item->image)}}" alt="${p.name}">
               <button class="home-product-card-cart" aria-label="Add to cart">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>

@@ -117,7 +117,7 @@
   flex-wrap: wrap;
 }
 .detail-variant-btn {
-  padding: 10px 24px;
+  padding: 5px 5px;
   border: 2px solid #ddd;
   background: #fff;
   border-radius: 9999px;
@@ -141,8 +141,8 @@
 }
 .detail-qty-decrease,
 .detail-qty-increase {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 30px;
   border: 2px solid #ddd;
   background: #fff;
   border-radius: 8px;
@@ -157,12 +157,12 @@
   border-color: #f59e0b;
 }
 .detail-qty-input {
-  width: 70px;
+  width: 50px;
   text-align: center;
   font-size: 1.3rem;
   border: 2px solid #ddd;
   border-radius: 8px;
-  padding: 8px;
+  padding: 0;
 }
 
 /* Action buttons */
@@ -173,8 +173,6 @@
 .detail-add-cart,
 .detail-buy-now {
   flex: 1;
-  padding: 16px 32px;
-  font-size: 1.1rem;
   font-weight: 600;
   border-radius: 9999px;
   cursor: pointer;
