@@ -126,8 +126,8 @@
       <div style="grid-column: 2 / 12;">
         <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
 
-        <div id="azurlane-products" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
-        @foreach($products as $item)
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
+        @foreach($azurlane as $item)
         <div class="home-product-card">
             <div class="home-product-card-image">
               <img src="{{asset('img/featured/'. $item->image)}}" alt="${p.name}">
@@ -144,54 +144,68 @@
           </div> 
         @endforeach
         </div>
-        <div class="home-pagination" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
-          <button class="home-pagination-btn active" >1</button>
-          <button class="home-pagination-btn">2</button>
-          <button class="home-pagination-btn">3</button>
-        </div>
         <div style="text-align: center;">
           <button class="home-btn-outline">View More Azur Lane</button>
         </div>
       </div>
     </div>
   </section>
-  <!-- ARKNIGHTS SECTION -->
-  <section class="home-game-section">
+  <!-- zzz SECTION -->
+ <section class="home-game-section">
     <div class="grid-container">
       <div style="grid-column: 2 / 12;">
-        <img src="{{asset('img/banner/Arknights.webp')}}" alt="Arknights" class="home-game-banner">
-        
-        <div id="arknights-products" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
-          <!-- Products will be inserted by JS -->
-        </div>
-        <div class="home-pagination" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
-          <button class="home-pagination-btn active" onclick="setPage('arknights', 0)">1</button>
-          <button class="home-pagination-btn" onclick="setPage('arknights', 1)">2</button>
-          <button class="home-pagination-btn" onclick="setPage('arknights', 2)">3</button>
+        <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
+        @foreach($zzz as $item)
+        <div class="home-product-card">
+            <div class="home-product-card-image">
+              <img src="{{asset('img/featured/'. $item->image)}}" alt="${p.name}">
+              <button class="home-product-card-cart" aria-label="Add to cart">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+              </button>
+            </div>
+            <p class="home-product-card-name">{{$item->name}}</p>
+            <p class="home-product-card-price">{{$item->price}}</p>
+          </div> 
+        @endforeach
         </div>
         <div style="text-align: center;">
-          <button class="home-btn-outline">View More Arknights</button>
+          <button class="home-btn-outline">View More Zenless Zone Zero </button>
         </div>
       </div>
     </div>
   </section>
-  <!-- HONKAI IMPACT SECTION -->
-  <section class="home-game-section">
+  <!-- HONKAI  SECTION -->
+ <section class="home-game-section">
     <div class="grid-container">
       <div style="grid-column: 2 / 12;">
-        <a href="{{('/san-pham/1')}}">
-        <img src="https://picsum.photos/seed/honkai/1200/200" alt="Honkai Impact" class="home-game-banner">
-        
-        <div id="honkai-products" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
-          <!-- Products will be inserted by JS -->
-        </div>
-        <div class="home-pagination" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
-          <button class="home-pagination-btn active" onclick="setPage('honkai', 0)">1</button>
-          <button class="home-pagination-btn" onclick="setPage('honkai', 1)">2</button>
-          <button class="home-pagination-btn" onclick="setPage('honkai', 2)">3</button>
+        <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
+        @foreach($hsr as $item)
+        <div class="home-product-card">
+            <div class="home-product-card-image">
+              <img src="{{asset('img/featured/'. $item->image)}}" alt="${p.name}">
+              <button class="home-product-card-cart" aria-label="Add to cart">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+              </button>
+            </div>
+            <p class="home-product-card-name">{{$item->name}}</p>
+            <p class="home-product-card-price">{{$item->price}}</p>
+          </div> 
+        @endforeach
         </div>
         <div style="text-align: center;">
-          <button class="home-btn-outline">View More Honkai Impact</button>
+          <button class="home-btn-outline">View More Honkai Star rail</button>
         </div>
       </div>
     </div>
@@ -215,45 +229,39 @@
 
 <script>
    let currentSlide = 0;
-const slides = document.querySelectorAll('.home-hero-slide');
-const dots = document.querySelectorAll('.home-hero-dot');
-const slideCount = slides.length;
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
-  currentSlide = index;
-}
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slideCount;
-  showSlide(currentSlide);
-}
-function goToSlide(index) {
-  showSlide(index);
-}
-// Auto-advance slider every 5 seconds
-setInterval(nextSlide, 5000);
-// ===== SEARCH OVERLAY =====
-function openSearch() {
-  document.getElementById('searchOverlay').classList.add('active');
-}
-function closeSearch() {
-  document.getElementById('searchOverlay').classList.remove('active');
-}
-// Close search on ESC key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closeSearch();
-  }
-});
-// ===== PRODUCT DATA =====
-const productData = {
-  azurlane: [],
-  arknights: [],
-  honkai: []
-};
+  const slides = document.querySelectorAll('.home-hero-slide');
+      const dots = document.querySelectorAll('.home-hero-dot');
+      const slideCount = slides.length;
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+        });
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === index);
+        });
+        currentSlide = index;
+      }
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slideCount;
+        showSlide(currentSlide);
+      }
+      function goToSlide(index) {
+        showSlide(index);
+      }
+      // Auto-advance slider every 5 seconds
+      setInterval(nextSlide, 5000);
+      // ===== SEARCH OVERLAY =====
+      function openSearch() {
+        document.getElementById('searchOverlay').classList.add('active');
+      }
+      function closeSearch() {
+        document.getElementById('searchOverlay').classList.remove('active');
+      }
+      // Close search on ESC key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeSearch();
+        }
+      });
 </script>
 @endsection
