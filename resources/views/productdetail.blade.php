@@ -6,7 +6,7 @@
 <div class="detail-page">
   <!-- Mascot trái (sticky, opacity nhẹ) -->
   <div class="detail-mascot-left">
-    <img src="https://picsum.photos/seed/mascot1/300/600" alt="Mascot Left" class="detail-mascot-img">
+    <img src="{{asset('img/mascot/'. $product->game->mascos_left)}}" alt="{{ $product->name }}" class="detail-mascot-img">
   </div>
 
   <!-- Container chính (8 cột) -->
@@ -22,7 +22,7 @@
             <!-- Ảnh chính -->
             <div class="detail-main-image-container">
               <img id="detail-main-image" 
-                   src="https://picsum.photos/seed/exusiai/600/600" 
+                   src="{{asset('img/products/'. $product->image)}}" 
                    alt="Arknights Exusiai 1/7 Scale Figure" 
                    class="detail-main-image">
             </div>
@@ -49,9 +49,9 @@
 
           <!-- Thông tin sản phẩm -->
           <div class="detail-info">
-            <h1 class="detail-title">Arknights Exusiai 1/7 Scale Figure</h1>
+            <h1 class="detail-title">{{ $product->name }}</h1>
             
-            <div class="detail-price">1.450.000đ</div>
+            <div class="detail-price">{{ $product->price }}</div>
 
             <!-- Phân loại (Variant) -->
             <div class="detail-variant">

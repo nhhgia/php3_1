@@ -25,7 +25,10 @@
             <a href="#">Accessories</a>
           </div>
         </div>
+        <div class="home-header-nav-item">
         <a href="#" class="home-header-nav-link">Collections</a>
+        </div>
+        
       </nav>
       <!-- Center Logo -->
       <div style="grid-column: 6 / 8; display: flex; align-items: center; justify-content: center;">

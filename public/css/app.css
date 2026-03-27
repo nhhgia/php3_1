@@ -30,7 +30,7 @@ body {
    ========================================================== */
 .home-header {
   background: hsl(0 0% 4%);
-  border-bottom: 2px solid hsl(350 89% 50%);
+  border-bottom: 2px solid #ffd800;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -45,7 +45,7 @@ body {
   transition: color 0.2s ease-in-out;
 }
 .home-header-nav-link:hover {
-  color: hsl(350 89% 50%);
+  color: #ffd800;
 }
 .home-header-nav-item {
   position: relative;
@@ -91,7 +91,7 @@ body {
   transition: color 0.2s ease-in-out;
 }
 .home-header-icon-btn:hover {
-  color: hsl(350 89% 50%);
+  color: #ffd800;
 }
 .home-header-logo {
   color: hsl(0 0% 100%);
@@ -101,7 +101,7 @@ body {
   text-decoration: none;
 }
 .home-header-logo-accent {
-  color: hsl(350 89% 50%);
+  color: #ffd800;
 }
 /* ==========================================================
    SEARCH OVERLAY
@@ -143,7 +143,7 @@ body {
   color: hsl(215 16% 47%);
 }
 .home-search-input:focus {
-  border-bottom-color: hsl(350 89% 50%);
+  border-bottom-color: #ffd800;
 }
 .home-search-close {
   background: none;
@@ -154,7 +154,7 @@ body {
   transition: color 0.2s;
 }
 .home-search-close:hover {
-  color: hsl(350 89% 50%);
+  color: #ffd800;
 }
 .home-search-label {
   font-size: 0.75rem;
@@ -174,7 +174,7 @@ body {
   transition: color 0.2s;
 }
 .home-search-quick-link:hover {
-  color: hsl(350 89% 50%);
+  color: #ffd800;
 }
 
 /* ==========================================================
@@ -182,7 +182,7 @@ body {
    ========================================================== */
 .home-footer {
   background: hsl(0 0% 4%);
-  border-top: 2px solid hsl(350 89% 50%);
+  border-top: 2px solid #ffd800;
   color: hsl(0 0% 80%);
   padding: 4rem 0 2rem;
 }
@@ -203,7 +203,7 @@ body {
   transition: color 0.2s;
 }
 .home-footer-link:hover {
-  color: hsl(350 89% 50%);
+  color: #ffd800;
 }
 .home-footer-divider {
   border-top: 1px solid hsl(0 0% 15%);

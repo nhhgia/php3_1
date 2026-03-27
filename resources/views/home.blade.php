@@ -192,15 +192,15 @@
 
         <div style="grid-column: 2 / 12;">
         <div style="position: relative;">
-        <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
+        <img src="{{asset('img/banner/zzz_banner.png')}}" alt="Azur Lane" class="home-game-banner" >
           <h1 style="position: absolute;
              top: 50%;
              left: 50%;
              transform: translate(-50%, -50%);
-             color: white;
+             color: #ecc900;
              font-size: 2.5rem;
              font-weight: 900;
-             text-shadow: 2px 2px 0 black;
+             text-shadow: 10px 5px 0 #000000;
              z-index: 1;
              ">
           ZENLESS ZONE ZERO
@@ -222,12 +222,12 @@
               </button>
             </div>
             <p class="home-product-card-name" style="color:white;">{{$item->name}}</p>
-            <p class="home-product-card-price">{{$item->price}}</p>
+            <p class="home-product-card-price" style="color:#FFD700; text-shadow: 2px #8B6508">{{$item->price}}</p>
           </div> 
         @endforeach
         </div>
         <div style="text-align: center;">
-          <button class="home-btn-outline">View More Azur Lane</button>
+          <button class="home-btn-outline" >View More ZENLESS ZONE ZERO</button>
         </div>
       </div>
     </div>
@@ -235,14 +235,40 @@
 <!-- HONKAI  SECTION -->
  <section class="home-game-section">
     <div class="grid-container">
-      <div style="grid-column: 2 / 12;">
-        <img src="{{asset('img/banner/azur.jpg')}}" alt="Azur Lane" class="home-game-banner">
+    
+      <img src="{{asset('img/banner/BG-hsr.jpeg')}}" alt=""  
+      style="position: absolute; 
+            margin:0;
+            left:0;
+            width: 100%;
+            height: 700px;  
+            object-fit: cover; 
+            z-index: -1;">
+    
 
+        <div style="grid-column: 2 / 12;">
+        <div style="position: relative;">
+        <img src="{{asset('img/banner/hsr.jpg')}}" alt="Azur Lane" class="home-game-banner" >
+          <h1 style="position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             color: #ffffff;
+             font-size: 2.5rem;
+             font-weight: 900;
+             text-shadow: 1px 1px 0 #ffc1fa;
+             z-index: 1;
+             ">
+          HONKAI STAR RAIL
+          </h1>
+          </div>
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem;">
         @foreach($hsr as $item)
-        <div class="home-product-card">
+        <div class="home-product-card" style="background-color: #00000066;">
             <div class="home-product-card-image">
-              <img src="{{asset('img/'. $item->image)}}" alt="${p.name}">
+              <a href="/san-pham/{{$item->slug}}">
+              <img src="{{asset('img/products/'. $item->image)}}" alt="${p.name}">
+            </a>
               <button class="home-product-card-cart" aria-label="Add to cart">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -251,13 +277,13 @@
                 </svg>
               </button>
             </div>
-            <p class="home-product-card-name">{{$item->name}}</p>
-            <p class="home-product-card-price">{{$item->price}}</p>
+            <p class="home-product-card-name" style="color:white;">{{$item->name}}</p>
+            <p class="home-product-card-price" style="color:#FFD700; text-shadow: 2px #8B6508">{{$item->price}}</p>
           </div> 
         @endforeach
         </div>
         <div style="text-align: center;">
-          <button class="home-btn-outline">View More Honkai Star rail</button>
+          <button class="home-btn-outline" >View More HONKAI STAR RAIL</button>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Game;
 
 class Product extends Model
 {
@@ -12,5 +13,10 @@ class Product extends Model
     {
         return number_format($value, 2, ',', '.') . ' đ';
     }
+    public function game()
+    {
+        return $this->belongsTo(Game::class);
+    }
+
 
 }

@@ -20,7 +20,7 @@ class GameSeeder extends Seeder
                 'name' => 'Azur Lane',
                 'slug' => Str::slug('Azur Lane'),
                 'img' => 'azurlane.jpg',
-                'mascos_left' => 'mascot_azurlane_left.png',
+                'mascos_left' => 'mascot_azurlane_left.jpg',
                 'mascos_right' => 'mascot_azurlane_right.png',
                 'banner1' => 'azurlane_banner1.jpg',
                 'banner2' => 'azurlane_banner2.jpg',
